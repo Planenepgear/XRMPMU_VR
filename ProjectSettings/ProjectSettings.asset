@@ -12,8 +12,8 @@ PlayerSettings:
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
-  companyName: Dilmer Games LLC
-  productName: UnityMultiplayerPlayground
+  companyName: LAB_UBLIFE
+  productName: XRMPMU_VR
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -146,6 +146,7 @@ PlayerSettings:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  - {fileID: -357744464092679299, guid: 401800ee248e7044ca7e9f2678c5c81e, type: 2}
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
@@ -165,7 +166,7 @@ PlayerSettings:
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
-    Android: com.DilmerGamesLLC.UnityMultiplayerPlayground
+    Android: com.LAB_UBLIFE.XRMPMU_VR
     Standalone: com.Dilmer-Games-LLC.UnityMultiplayerPlayground
   buildNumber:
     Standalone: 0

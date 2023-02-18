@@ -21,7 +21,7 @@ public class UIManager : Singleton<UIManager>
     [SerializeField]
     private TMP_InputField joinCodeInput;
     [SerializeField]
-    private Text joinCodeInputTxt;
+    private InputField joinCodeInputTxt;
 
     [SerializeField]
     private Button executePhysicsButton;
@@ -67,11 +67,11 @@ public class UIManager : Singleton<UIManager>
         // START CLIENT
         startClientButton?.onClick.AddListener(async () =>
         {
-            if (RelayManager.Instance.IsRelayEnabled && !string.IsNullOrEmpty(joinCodeInput.text))
+            if (joinCodeInput && RelayManager.Instance.IsRelayEnabled && !string.IsNullOrEmpty(joinCodeInput.text))
                 await RelayManager.Instance.JoinRelay(joinCodeInput.text);
 
-            if (RelayManager.Instance.IsRelayEnabled && !string.IsNullOrEmpty(joinCodeInputTxt.text))
-                await RelayManager.Instance.JoinRelay(joinCodeInput.text); //add
+            if (joinCodeInputTxt && RelayManager.Instance.IsRelayEnabled && !string.IsNullOrEmpty(joinCodeInputTxt.text))
+                await RelayManager.Instance.JoinRelay(joinCodeInputTxt.text); //add
 
             if (NetworkManager.Singleton.StartClient())
                 Logger.Instance.LogInfo("Client started...");
