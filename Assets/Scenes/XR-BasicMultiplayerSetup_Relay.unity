@@ -1412,7 +1412,8 @@ MonoBehaviour:
   startHostButton: {fileID: 1322821207875538215}
   startClientButton: {fileID: 257224716}
   playersInGameText: {fileID: 189727566}
-  joinCodeInput: {fileID: 460260904}
+  joinCodeInput: {fileID: 0}
+  joinCodeInputTxt: {fileID: 460260904}
   executePhysicsButton: {fileID: 951523241}
 --- !u!4 &679076279
 Transform:
@@ -2050,6 +2051,7 @@ MonoBehaviour:
   startClientButton: {fileID: 2024932934}
   playersInGameText: {fileID: 189727566}
   joinCodeInput: {fileID: 0}
+  joinCodeInputTxt: {fileID: 0}
   executePhysicsButton: {fileID: 951523241}
 --- !u!1 &1158681468
 GameObject:

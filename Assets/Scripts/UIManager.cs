@@ -19,8 +19,9 @@ public class UIManager : Singleton<UIManager>
     private TextMeshProUGUI playersInGameText;
 
     [SerializeField]
-    //private TMP_InputField joinCodeInput;
-    private Text joinCodeInput;
+    private TMP_InputField joinCodeInput;
+    [SerializeField]
+    private Text joinCodeInputTxt;
 
     [SerializeField]
     private Button executePhysicsButton;
@@ -69,7 +70,10 @@ public class UIManager : Singleton<UIManager>
             if (RelayManager.Instance.IsRelayEnabled && !string.IsNullOrEmpty(joinCodeInput.text))
                 await RelayManager.Instance.JoinRelay(joinCodeInput.text);
 
-            if(NetworkManager.Singleton.StartClient())
+            if (RelayManager.Instance.IsRelayEnabled && !string.IsNullOrEmpty(joinCodeInputTxt.text))
+                await RelayManager.Instance.JoinRelay(joinCodeInput.text); //add
+
+            if (NetworkManager.Singleton.StartClient())
                 Logger.Instance.LogInfo("Client started...");
             else
                 Logger.Instance.LogInfo("Unable to start client...");
