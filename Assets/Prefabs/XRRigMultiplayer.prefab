@@ -431,7 +431,7 @@ GameObject:
   - component: {fileID: 5419691448534602739}
   - component: {fileID: 5419691448534602742}
   - component: {fileID: 765280715608281466}
-  - component: {fileID: 765280715608281467}
+  - component: {fileID: -1773385163802109796}
   - component: {fileID: 765280715608281464}
   - component: {fileID: 5419691448534602738}
   - component: {fileID: 5419691448534602750}
@@ -509,7 +509,7 @@ MonoBehaviour:
   m_EnableFly: 0
   m_UseGravity: 1
   m_GravityApplicationMode: 0
-  m_ForwardSource: {fileID: 0}
+  m_ForwardSource: {fileID: 2110416171392403483}
   m_LeftHandMoveAction:
     m_UseReference: 1
     m_Action:
@@ -534,7 +534,7 @@ MonoBehaviour:
       m_SingletonActionBindings: []
       m_Flags: 0
     m_Reference: {fileID: 0}
-  enableinputeActions: 1
+  enableInputActions: 1
 --- !u!114 &5419691448534602748
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -626,7 +626,7 @@ MonoBehaviour:
   AlwaysReplicateAsRoot: 0
   DontDestroyWithOwner: 0
   AutoObjectParentSync: 1
---- !u!114 &765280715608281467
+--- !u!114 &-1773385163802109796
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -635,7 +635,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 765280715608281412}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 54c9647dc784a46bca664910f182491e, type: 3}
+  m_Script: {fileID: 11500000, guid: 02ff36058fc945e449202895d634aa34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   SyncPositionX: 1
@@ -678,7 +678,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_System: {fileID: 5419691448534602751}
-  m_MoveSpeed: 1
+  m_MoveSpeed: 1.5
   m_EnableStrafe: 1
   m_EnableFly: 0
   m_UseGravity: 1
@@ -697,7 +697,7 @@ MonoBehaviour:
       m_Flags: 0
     m_Reference: {fileID: 6972639530819350904, guid: c348712bda248c246b8c49b3db54643f, type: 3}
   m_RightHandMoveAction:
-    m_UseReference: 1
+    m_UseReference: 0
     m_Action:
       m_Name: Right Hand Move
       m_Type: 0
@@ -1600,7 +1600,7 @@ GameObject:
   - component: {fileID: 6040317871043569699}
   - component: {fileID: 2110416171572308125}
   - component: {fileID: 2762184461866629326}
-  - component: {fileID: 2110416171572308114}
+  - component: {fileID: 3114788430725959244}
   m_Layer: 0
   m_Name: RightHand (Teleport Locomotion)
   m_TagString: Untagged
@@ -1837,7 +1837,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2110416171572308121}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8b94c4c83dec6a94fbaebf543478259e, type: 3}
   m_Name: 
@@ -1863,7 +1863,7 @@ MonoBehaviour:
       m_SingletonActionBindings: []
       m_Flags: 0
     m_Reference: {fileID: 15759602096507913, guid: c348712bda248c246b8c49b3db54643f, type: 3}
---- !u!114 &2110416171572308114
+--- !u!114 &3114788430725959244
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1872,7 +1872,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2110416171572308121}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 54c9647dc784a46bca664910f182491e, type: 3}
+  m_Script: {fileID: 11500000, guid: 02ff36058fc945e449202895d634aa34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   SyncPositionX: 1
@@ -2518,7 +2518,7 @@ GameObject:
   - component: {fileID: 6847206923407287304}
   - component: {fileID: 2110416173090695293}
   - component: {fileID: 5707124982189426977}
-  - component: {fileID: 2110416173090695271}
+  - component: {fileID: 8337537866346450878}
   m_Layer: 0
   m_Name: LeftHand (Smooth locomotion)
   m_TagString: Untagged
@@ -2755,7 +2755,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2110416173090695270}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8b94c4c83dec6a94fbaebf543478259e, type: 3}
   m_Name: 
@@ -2781,7 +2781,7 @@ MonoBehaviour:
       m_SingletonActionBindings: []
       m_Flags: 0
     m_Reference: {fileID: -3742484312079769484, guid: c348712bda248c246b8c49b3db54643f, type: 3}
---- !u!114 &2110416173090695271
+--- !u!114 &8337537866346450878
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2790,7 +2790,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2110416173090695270}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 54c9647dc784a46bca664910f182491e, type: 3}
+  m_Script: {fileID: 11500000, guid: 02ff36058fc945e449202895d634aa34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   SyncPositionX: 1
