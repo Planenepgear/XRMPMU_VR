@@ -4,11 +4,11 @@ using UnityEngine.XR.Interaction.Toolkit;
 public class NetworkMoveProvider : ActionBasedContinuousMoveProvider
 {
     [SerializeField]
-    public bool enableinputeActions;
+    public bool enableInputActions;
 
     protected override Vector2 ReadInput()
     {
-        if (!enableinputeActions) return Vector2.zero;
+        if (!enableInputActions) return Vector2.zero;
         return base.ReadInput();
     }
 }

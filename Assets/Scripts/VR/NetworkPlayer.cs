@@ -1,8 +1,11 @@
 
-using Unity.Netcode;
+using System;
 using UnityEngine;
+using Unity.Netcode;
 using UnityEngine.InputSystem.XR;
 using UnityEngine.XR.Interaction.Toolkit;
+
+using Random=UnityEngine.Random;
 
 public class NetworkPlayer : NetworkBehaviour
 {
@@ -25,7 +28,7 @@ public class NetworkPlayer : NetworkBehaviour
             var clientCamera = GetComponentInChildren<Camera>();
 
             clientCamera.enabled = false;
-            clientMoveProvider.enableinputeActions = false;
+            clientMoveProvider.enableInputActions = false;
             clientTurnProvider.enableTurnLeftRight = false;
             clientTurnProvider.enableTurnAround = false;
             clientHead.enabled = false;
@@ -43,5 +46,34 @@ public class NetworkPlayer : NetworkBehaviour
          if(IsClient && IsOwner){
             transform.position = new Vector3(Random.Range(placementArea.x,placementArea.y), transform.position.y, Random.Range(placementArea.x,placementArea.y));
          }
+    }
+
+    public void OnSelectGrabbable(SelectEnterEventArgs eventArgs)
+    {
+        if(IsClient && IsOwner)
+        {
+              NetworkObject networkObjectSelected = eventArgs.interactableObject.transform.GetComponent<NetworkObject>();
+              {
+                if(networkObjectSelected != null)
+                {
+                    // request ownership from the server
+                    RequestGrabbableOwnershipServerRpc(OwnerClientId, networkObjectSelected);
+                }
+              }
+        }
+    }
+
+    [ServerRpc]
+    public void RequestGrabbableOwnershipServerRpc(ulong newOwnerClientId, 
+    NetworkObjectReference networkObjectReference)
+    {
+        if(networkObjectReference.TryGet(out NetworkObject networkObject))
+        {
+            networkObject.ChangeOwnership(newOwnerClientId);
+        }
+        else
+        {
+            Logger.Instance.LogWarning($"Unable to change ownership for clientId {newOwnerClientId}");
+        }
     }
 }
