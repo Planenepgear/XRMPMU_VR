@@ -18,12 +18,15 @@ EditorBuildSettings:
     path: Assets/Scenes/XR-BasicMultiplayerSetup.unity
     guid: a7d8871220536054a880428478952033
   - enabled: 1
+    path: Assets/Scenes/Login.unity
+    guid: 89323fc4dae55fb459a461a70b36a40c
+  - enabled: 0
     path: Assets/Scenes/PC-BasicMultiplayerSetup_Relay.unity
     guid: 76d0350ec072c0d4995a5eb950f6a14e
   - enabled: 0
     path: Assets/Scenes/XR-BasicMultiplayerSetup_Relay.unity
     guid: 7b9beb7073f202541900b2c93858847d
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/XR-BasicMultiplayerMain.unity
     guid: a8347c7eed5c5584590f1bffecc855d9
   - enabled: 0

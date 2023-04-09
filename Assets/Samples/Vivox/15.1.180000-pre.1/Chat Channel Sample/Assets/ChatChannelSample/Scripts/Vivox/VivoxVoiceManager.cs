@@ -73,13 +73,13 @@ public class VivoxVoiceManager : MonoBehaviour
     //These variables should be set to the projects Vivox credentials if the authentication package is not being used
     //Credentials are available on the Vivox Developer Portal (developer.vivox.com) or the Unity Dashboard (dashboard.unity3d.com), depending on where the organization and project were made
     [SerializeField]
-    private string _key;
+    private string _key = "0XEyNVWbjObioQBYdp0irqvstlI0qg63";
     [SerializeField]
-    private string _issuer;
+    private string _issuer = "12369-unity-49933-udash";
     [SerializeField]
-    private string _domain;
+    private string _domain = "mtu1xp.vivox.com";
     [SerializeField]
-    private string _server;
+    private string _server = "https://unity.vivox.com/appconfig/12369-unity-49933-udash";
 
     /// <summary>
     /// Access singleton instance through this propriety.

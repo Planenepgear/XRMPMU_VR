@@ -960,7 +960,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.22055559, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -1.4999981, y: 0}
+  m_AnchoredPosition: {x: -1.5, y: 0}
   m_SizeDelta: {x: -3, y: -4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &405170513
@@ -2566,10 +2566,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ccec6cc900e83f41aade135fe997e45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _key: 
-  _issuer: 
-  _domain: 
-  _server: 
+  _key: 0XEyNVWbjObioQBYdp0irqvstlI0qg63
+  _issuer: 12369-unity-49933-udash
+  _domain: mtu1xp.vivox.com
+  _server: https://unity.vivox.com/appconfig/12369-unity-49933-udash
 --- !u!1 &836621974
 GameObject:
   m_ObjectHideFlags: 0
